@@ -5,9 +5,12 @@ import {
   GROOM_NAME,
   GROOM_FATHER_NAME,
   GROOM_MOTHER_NAME,
+  GROOM_SISTER_NAME,
   BRIDE_NAME,
   BRIDE_FATHER_NAME,
   BRIDE_MOTHER_NAME,
+  BRIDE_SISTER_NAME,
+  BRIDE_BROTHER_NAME
 } from "../../config";
 import Flower from "../assets/flower1.png";
 
@@ -76,7 +79,7 @@ const Greeting = () => {
       <GroomBride data-aos="fade-up">
         {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의 장남 {GROOM_NAME}
         <br />
-        {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME}의 장녀 {BRIDE_NAME}
+        {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME}의 차녀 {BRIDE_NAME}
       </GroomBride>
     </Wrapper>
   );
