@@ -27,8 +27,18 @@ const TitleWrapper = styled.div`
   -o-animation: fadein 3s; /* Opera */
 `;
 
+const VideoWrapper = styled.div`
+  width: 60%;
+  margin: 0 auto;
+`;
+
 const VideoBackground = styled.video`
   width: 100%;
+  display: block;
+  /* 타원형(문 형태) 마스킹 - 상단 둥글게 */
+  border-radius: 50% 50% 0 0 / 15% 15% 0 0;
+  overflow: hidden;
+  object-fit: cover;
 `;
 
 const WeddingInvitation = styled.p`
@@ -63,9 +73,11 @@ const Title = () => {
           {WEDDING_LOCATION}
         </Schedule>
       </TitleWrapper>
-      <VideoBackground autoPlay loop muted playsInline={true}>
-        <source src={BackgroundVideo} type="video/mp4" />
-      </VideoBackground>
+      <VideoWrapper>
+        <VideoBackground autoPlay loop muted playsInline={true}>
+          <source src={BackgroundVideo} type="video/mp4" />
+        </VideoBackground>
+      </VideoWrapper>
     </Layout>
   );
 };

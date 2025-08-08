@@ -1,6 +1,6 @@
 export const WEDDING_INVITATION_URL = "http://localhost:8000/";
-export const KAKAO_MAP_KEY = "34_PmHrX7MsefMiIpMi0G8zydMUHxkPaAAAAAQoXEpYAAAGYhS5MY86SpOckXrb0";
-export const KAKAOTALK_SHARE_IMAGE ="..\src\assets\LoveEachFullGrace.jpg";
+export const KAKAO_API_TOKEN = "63b837e8f29e687316e9a8a2f5d426e4";
+export const KAKAOTALK_SHARE_IMAGE = "..\src\assets\LoveEachFullGrace.jpg";
 
 export const WEDDING_DATE = "2026년 04월 18일, 토요일 오전 11시 00분";
 export const WEDDING_LOCATION = "국회의사당, 소통관";
